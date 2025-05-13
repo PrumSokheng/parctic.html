@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Table</title>
+    <style>
+        table {
+            width: 70%;
+            font-family: Arial, sans-serif;
+        }
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+        }
+        thead {
+            background-color:aqua; /* Green header */
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff; /* White for odd rows */
+        }
+        tbody tr:hover {
+            background-color: #ddd; /* Light gray on hover */
+        }
+        td:first-child {
+            font-weight: bold;
+            color: #05db29; /* Dark blue for ID column */
+        }
+        td:nth-child(3) {
+            color: #673ce7; /* Red for Gender column */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>004</td>
+                <td>Vi Bol</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Mrr Na</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Li Na Coppy</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Kinly</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>009</td>
+                <td>Ronado</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Heng</td>
+                <td>Male</td>
+            </tr>
+             <tr>
+                <td>0010</td>
+                <td>krna</td>
+                <td>Male</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

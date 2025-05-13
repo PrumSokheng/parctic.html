@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       table {
+            width: 70%;
+            font-family: Arial, sans-serif;
+        }
+        table, tr, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding:8px;
+            text-align: left;
+        }
+        thead {
+            background-color:thistle; /* Green header */
+            color:black;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff; /* White for odd rows */
+        }
+        tbody tr:hover {
+            background-color: #ddd; /* Light gray on hover */
+        }
+        td:first-child {
+            font-weight: bold;
+            color:black; /* Dark blue for ID column */
+        }
+        td:nth-child(3) {
+            color:black; /* Red for Gender column */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Membership</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th style="background-color: lightcoral;">Joined</th>
+                <th style="background-color: lightcyan;">Cancelled</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Margaret Nguyen</td>
+                <td>427311</td>
+                <td>June3,2010</td>
+                <td>n/a</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>Edvard galinski</td>
+                <td>533175</td>
+                <td>January13,2011</td>
+                <td>April8,2017</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Hoshi nakamura</td>
+                <td>601942</td>
+                <td>July 23,2012</td>
+                <td>n/a</td>
+                <td>15</td>
+            </tr>
+            <th colspan="4">Total Balance</th>
+            <th>52.00</th>
+        </tbody>
+    </table>
+</body>
+</html>
